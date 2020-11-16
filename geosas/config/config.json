@@ -1,0 +1,61 @@
+{
+  "title": "GéoSAS - version 16/11/2020",
+  "description": "",
+  "type": "folder",
+  "children": [{
+      "title": "Pédologie",
+      "description": "Données concernant les connaissance sur les sols de Bretagne",
+      "type": "folder",
+      "children": [{
+        "title": "Cartes régionales",
+        "description": "Cartes couvrant l'ensemble de la Bretagne au 1/250 000 ème",
+        "type": "folder",
+        "children": [{
+          "title": "RRP : Matériau parental dominant",
+          "description": "Référentiel pédologique régional : Matériau parental dominant",
+          "type": "wms_layer",
+	  "metadata_url": "http://geowww.agrocampus-ouest.fr/geonetwork/apps/georchestra/?uuid=505375ac-6315-4484-b196-36db3ab459fa",
+          "params": {
+            "url": "http://geowww.agrocampus-ouest.fr/geoserver/sdb/ows",
+            "name": "ucs_pp_bzh",
+            "style": "pp_Materiau_dom",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+         },
+         {
+          "title": "RRP : Drainage dominant",
+          "description": "Référentiel pédologique régional : Classe de drainage dominant",
+          "type": "wms_layer",
+	  "metadata_url": "http://geowww.agrocampus-ouest.fr/geonetwork/apps/georchestra/?uuid=505375ac-6315-4484-b196-36db3ab459fa",
+          "params": {
+            "url": "http://geowww.agrocampus-ouest.fr/geoserver/sdb/ows",
+            "name": "ucs_pp_bzh",
+            "style": "pp_drainage_dom",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+         }]
+       }]
+    },
+	{
+      "title": "Hydrologie",
+      "description": "Données concernant l'hydrologie",
+      "type": "folder",
+      "children": [{
+          "title": "Réseau hydrologique modélisé",
+          "description": "Réseau hydrographique modélisé de Bretagne",
+          "type": "wms_layer",
+ 	  "metadata_url": "http://geowww.agrocampus-ouest.fr/geonetwork/apps/georchestra/?uuid=1cc83638-12c3-43e6-992b-6e3ae5a55324",
+          "params": {
+            "url": "http://geowww.agrocampus-ouest.fr/geoserver/mntsurf/ows",
+            "name": "bzh_rh25ha",
+            "format": "image/png",
+            "srs": "epsg:2154"
+          }
+        }
+      ]
+    }
+  ]
+}
+

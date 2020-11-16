@@ -5,12 +5,12 @@ from qgis.PyQt.QtCore import Qt
 
 import os.path
 
-from geograndest.utils.plugin_globals import PluginGlobals
-from geograndest.gui.dock import DockWidget
-from geograndest.gui.about_box import AboutBox
-from geograndest.gui.param_box import ParamBox
-from geograndest.nodes.tree_node_factory import TreeNodeFactory
-from geograndest.nodes.tree_node_factory import download_tree_config_file
+from geosas.utils.plugin_globals import PluginGlobals
+from geosas.gui.dock import DockWidget
+from geosas.gui.about_box import AboutBox
+from geosas.gui.param_box import ParamBox
+from geosas.nodes.tree_node_factory import TreeNodeFactory
+from geosas.nodes.tree_node_factory import download_tree_config_file
 
 
 class SimpleAccessPlugin:
@@ -69,7 +69,7 @@ class SimpleAccessPlugin:
         """
         plugin_menu = self.iface.pluginMenu()
         ##self.plugin_menu = QMenu(u"Géo2France", plugin_menu)
-        self.plugin_menu = QMenu(u"GéoGrandEst", plugin_menu)
+        self.plugin_menu = QMenu(u"GéoSAS", plugin_menu)
         plugin_menu.addMenu(self.plugin_menu)
 
         show_panel_action = QAction(u'Afficher le panneau latéral', self.iface.mainWindow())
